@@ -8,7 +8,7 @@ function kilometerToMeter(kilometer) {
     if (kilometer > 0) {
         meter = kilometer * 1000;
     } else if (kilometer <= 0) {
-        return "Please enter a valid unit"
+        return "Please enter a valid unit";
     }
     return meter;
 }
