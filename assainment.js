@@ -1,4 +1,7 @@
-// Kilometer to meter converter 
+// https: //github.com/Chowdhury-Anik/javascript-assinment 
+
+
+//  Kilometer to meter converter
 
 function kilometerToMeter(kilometer) {
     var meter = 0;
@@ -39,7 +42,7 @@ function hotelCost(stayTime) {
 
 var userName = ["Anik", "Manik", "Atikullha", "Debasish", "Ratan", "joyanta"];
 
-function megaFriend() {
+function megaFriend(userName) {
     var maxword = userName[0];
     for (let i = 0; i < userName.length; i++) {
         const element = userName[i];
