@@ -18,7 +18,7 @@ function budgetCalculator(watch, mobile, laptop) {
     return total;
 }
 var totalPrice = budgetCalculator(5, 5, 15);
-console.log(totalPrice);
+
 
 
 
