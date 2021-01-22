@@ -1,6 +1,3 @@
-// https: //github.com/Chowdhury-Anik/javascript-assinment 
-
-
 //  Kilometer to meter converter
 
 function kilometerToMeter(kilometer) {
@@ -12,6 +9,19 @@ function kilometerToMeter(kilometer) {
     }
     return meter;
 }
+
+
+
+//  Budget Calculator
+function budgetCalculator(watch, mobile, laptop) {
+    var total = (watch * 50) + (mobile * 100) + (laptop * 500);
+    return total;
+}
+var totalPrice = budgetCalculator(5, 5, 15);
+console.log(totalPrice);
+
+
+
 
 
 // Hotel cost calculation
