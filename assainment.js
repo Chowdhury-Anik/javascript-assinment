@@ -19,7 +19,7 @@ function kilometerToMeter(kilometer) {
 function hotelCost(stayTime) {
     var hotelRent = 0;
     if (stayTime <= 10) {
-        firstPartCost = stayTime * 100;
+        var firstPartCost = stayTime * 100;
 
     } else if (stayTime <= 20) {
         var firstPartCost = 10 * 100;
@@ -44,8 +44,8 @@ var userName = ["Anik", "Manik", "Atikullha", "Debasish", "Ratan", "joyanta"];
 
 function megaFriend(userName) {
     var maxword = userName[0];
-    for (let i = 0; i < userName.length; i++) {
-        const element = userName[i];
+    for (var i = 0; i < userName.length; i++) {
+        var element = userName[i];
         if (element.length > maxword.length) {
             maxword = element;
         }
