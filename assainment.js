@@ -26,25 +26,27 @@ var totalPrice = budgetCalculator(5, 5, 15);
 
 // Hotel cost calculation
 
-function hotelCost(stayTime) {
-    var hotelRent = 0;
-    if (stayTime <= 10) {
-        var firstPartCost = stayTime * 100;
-
-    } else if (stayTime <= 20) {
-        var firstPartCost = 10 * 100;
-        var nextDays = stayTime - 10;
-        var secondPartCost = nextDays * 80;
-        hotelRent = firstPartCost + secondPartCost;
-    } else {
-        var firstPartCost = 10 * 100;
-        var secondPartCost = 10 * 80;
-        var nextDays = stayTime - 20;
-        var thirdPartCost = nextDays * 50;
-        hotelRent = firstPartCost + secondPartCost + thirdPartCost;
-
+function hotelCost(day){
+    var totalCost;
+    if(day > 0){                             //To avoid negative value.
+        if (day <= 10){
+            totalCost = day * 10;
+            return totalCost;
+        }
+        else if(day <= 20){
+            day = day - 10;
+            totalCost = ((day * 80) + 1000);   //Day (1-10) total cost 1000 taka.
+            return totalCost;
+        }
+        else if(day > 20){
+            day = day - 20;
+            totalCost = ((day * 50) + 1800);   //Day (1-20) total cost 1000 + 800 = 1800 Taka.
+            return totalCost;
+        }
     }
-    return hotelRent;
+    else{
+        return "Invalid Input!. Days can not be negative."  //If the value is negative.
+    }
 }
 
 
